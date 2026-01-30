@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fractional Capture Management | Ayo Strategic Consulting Group</title>
+    <meta name="description" content="Get a dedicated capture team without full-time hires. Fractional capture management services including capture manager, research analyst, and technical writer.">
+    <meta name="keywords" content="fractional capture management, capture management services, government contractor support, capture team, proposal development, outsourced capture manager">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --teal: #5E8894;
+            --green: #60870C;
+            --gold: #D4A017;
+            --red: #C55A5A;
+            --light: #f5f7fa;
+            --medium: #e4e8ec;
+            --dark: #2a2a2a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+            color: var(--dark);
+            line-height: 1.7;
+            background: var(--light);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--green) 0%, #4a6a08 100%);
+            padding: 80px 24px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 60%;
+            height: 200%;
+            background: rgba(255,255,255,0.03);
+            transform: rotate(15deg);
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.2rem, 5vw, 3.2rem);
+            color: white;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: rgba(255,255,255,0.9);
+            max-width: 600px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        /* Main Content */
+        .content {
+            padding: 60px 24px;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .intro h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: var(--teal);
+            margin-bottom: 16px;
+        }
+
+        .intro p {
+            font-size: 1.1rem;
+            color: #555;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* The Team */
+        .team-section {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            margin-bottom: 50px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+        }
+
+        .team-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            color: var(--teal);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 24px;
+        }
+
+        .team-role {
+            text-align: center;
+            padding: 24px 16px;
+            background: var(--light);
+            border-radius: 8px;
+        }
+
+        .team-role .icon {
+            width: 60px;
+            height: 60px;
+            background: var(--teal);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 16px;
+            font-size: 1.5rem;
+        }
+
+        .team-role h3 {
+            font-size: 1.1rem;
+            color: var(--dark);
+            margin-bottom: 8px;
+        }
+
+        .team-role p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        /* What We Handle */
+        .services-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            margin-bottom: 50px;
+        }
+
+        .service-item {
+            background: white;
+            padding: 28px;
+            border-radius: 8px;
+            border-top: 4px solid var(--gold);
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+        }
+
+        .service-item h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            color: var(--teal);
+            margin-bottom: 10px;
+        }
+
+        .service-item p {
+            color: #555;
+            font-size: 0.95rem;
+        }
+
+        /* Why Fractional */
+        .why-section {
+            background: var(--teal);
+            color: white;
+            padding: 40px;
+            border-radius: 8px;
+            margin-bottom: 50px;
+        }
+
+        .why-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            margin-bottom: 24px;
+            text-align: center;
+        }
+
+        .comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .comparison-col h3 {
+            font-size: 1rem;
+            margin-bottom: 16px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid rgba(255,255,255,0.2);
+        }
+
+        .comparison-col ul {
+            list-style: none;
+        }
+
+        .comparison-col li {
+            padding: 8px 0;
+            padding-left: 24px;
+            position: relative;
+            font-size: 0.95rem;
+        }
+
+        .comparison-col.old li::before {
+            content: '✗';
+            position: absolute;
+            left: 0;
+            color: var(--red);
+        }
+
+        .comparison-col.new li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--gold);
+        }
+
+        /* Engagement Details */
+        .engagement {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            margin-bottom: 50px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+        }
+
+        .engagement h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            color: var(--teal);
+            margin-bottom: 24px;
+            text-align: center;
+        }
+
+        .engagement-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            text-align: center;
+        }
+
+        .detail-box {
+            padding: 20px;
+            background: var(--light);
+            border-radius: 8px;
+        }
+
+        .detail-box .label {
+            font-size: 0.85rem;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        .detail-box .value {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            color: var(--green);
+        }
+
+        /* CTA Section */
+        .cta {
+            text-align: center;
+            padding: 50px 24px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+        }
+
+        .cta h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: var(--teal);
+            margin-bottom: 16px;
+        }
+
+        .cta p {
+            color: #555;
+            margin-bottom: 12px;
+            font-size: 1.05rem;
+        }
+
+        .cta .price-note {
+            color: var(--green);
+            font-weight: 600;
+            margin-bottom: 24px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: var(--gold);
+            color: white;
+            padding: 16px 40px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        .cta-button:hover {
+            background: #c4910f;
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 24px;
+            color: #777;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: var(--teal);
+            text-decoration: none;
+        }
+
+        @media (max-width: 600px) {
+            .hero {
+                padding: 60px 20px;
+            }
+            .content {
+                padding: 40px 16px;
+            }
+            .comparison {
+                grid-template-columns: 1fr;
+            }
+            .team-section, .engagement, .why-section {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="container">
+            <h1>Fractional Capture Management</h1>
+            <p>A dedicated capture team without the cost of full-time hires</p>
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="container">
+            <div class="intro">
+                <h2>You Need a Capture Team. You Do Not Need Five Full-Time Salaries.</h2>
+                <p>Small and mid-sized contractors often lose opportunities not because they lack capability, but because they lack capacity. Fractional capture management gives you access to the expertise you need, when you need it, without the overhead of building an internal team.</p>
+            </div>
+
+            <div class="team-section">
+                <h2>Your Fractional Capture Team</h2>
+                <div class="team-grid">
+                    <div class="team-role">
+                        <div class="icon">📋</div>
+                        <h3>Capture Manager</h3>
+                        <p>Develops win strategy, coordinates the team, and keeps your capture on track</p>
+                    </div>
+                    <div class="team-role">
+                        <div class="icon">🔍</div>
+                        <h3>Research Analyst</h3>
+                        <p>Identifies opportunities, researches competitors, and gathers intelligence</p>
+                    </div>
+                    <div class="team-role">
+                        <div class="icon">✍️</div>
+                        <h3>Technical Writer</h3>
+                        <p>Transforms your capabilities into compelling, compliant proposals</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="services-list">
+                <div class="service-item">
+                    <h3>Opportunity Research</h3>
+                    <p>We monitor the market, identify opportunities that match your capabilities, and help you decide which ones are worth pursuing.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Capture Strategy</h3>
+                    <p>We develop your win themes, analyze competitors, and create a plan to position you for success before the RFP drops.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Proposal Development</h3>
+                    <p>We write, review, and refine your proposals to ensure they are compliant, compelling, and submission-ready.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Pipeline Management</h3>
+                    <p>We help you build and maintain a healthy pipeline so you always know what is coming and what to focus on.</p>
+                </div>
+            </div>
+
+            <div class="why-section">
+                <h2>Why Fractional Instead of Full-Time?</h2>
+                <div class="comparison">
+                    <div class="comparison-col old">
+                        <h3>Building an Internal Team</h3>
+                        <ul>
+                            <li>$300K+ annually in salaries alone</li>
+                            <li>Months to hire the right people</li>
+                            <li>Overhead costs, benefits, management</li>
+                            <li>Capacity sits idle between captures</li>
+                            <li>Your problem when someone leaves</li>
+                        </ul>
+                    </div>
+                    <div class="comparison-col new">
+                        <h3>Fractional Capture Management</h3>
+                        <ul>
+                            <li>Fraction of the cost, full expertise</li>
+                            <li>Start immediately with a proven team</li>
+                            <li>No overhead, no benefits, no HR issues</li>
+                            <li>Scale up or down based on your pipeline</li>
+                            <li>Continuity is our responsibility</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="engagement">
+                <h2>How Engagements Work</h2>
+                <div class="engagement-details">
+                    <div class="detail-box">
+                        <div class="label">Minimum Commitment</div>
+                        <div class="value">6 Months</div>
+                    </div>
+                    <div class="detail-box">
+                        <div class="label">Engagement Style</div>
+                        <div class="value">Embedded Team</div>
+                    </div>
+                    <div class="detail-box">
+                        <div class="label">Communication</div>
+                        <div class="value">Weekly Touchpoints</div>
+                    </div>
+                </div>
+                <p style="text-align: center; margin-top: 24px; color: #555;">
+                    Capture cycles take time. A six-month minimum ensures we have enough runway to identify opportunities, develop strategy, and execute proposals that win. Pricing is customized based on your pipeline volume and support needs.
+                </p>
+            </div>
+
+            <div class="cta">
+                <h2>Ready to Build Your Capture Team?</h2>
+                <p>Schedule a consultation to discuss your pipeline and see if fractional capture management is right for you.</p>
+                <p class="price-note">Consultation fee: $250 (applied to your engagement if you proceed)</p>
+                <a href="https://buy.stripe.com/6oU6oGfTp2dRaKRabe67S0b" class="cta-button">Book Your Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Ayo Strategic Consulting Group. All rights reserved.</p>
+        <p><a href="https://www.ayoscg.com">www.ayoscg.com</a></p>
+    </footer>
+</body>
+</html>
